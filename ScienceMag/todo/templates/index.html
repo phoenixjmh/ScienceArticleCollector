@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sciencef Scraper</title>
+</head>
+<body>
+<ul>
+{% block context %}
+	{% for key, value in dictionary.items %}
+	<li><a href= {{value}} >  {{key}} </a></li>
+
+	{% endfor %}
+{% endblock %}
+
+
+
+</ul>
+
+
+<button onclick= 'SS.callit()'></button>
+</body>
+</html>
